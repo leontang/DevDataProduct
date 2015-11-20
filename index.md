@@ -1,0 +1,85 @@
+---
+title       : Body Mass Index (BMI) Calculator
+subtitle    : Developing Data Products, Data Scientist
+author      : Leon
+job         : Data Scientist
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Objective
+
+This is the course project for the Developing Data Products module, as part of the
+Data Science course offering from Johns Hopkins University in Coursera.
+
+The purpose of this project and presentation is to demonstrate the understanding on
+the usage of shiny and slidify to develop data products easily and quickly.
+
+For this project, I have chose to do a Body Mass Index (BMI) calculator to demonstrate
+my understanding on shiny and slidify.
+
+--- 
+
+## What is Body Mass Index (BMI)
+
+The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres.
+
+The BMI is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual, and then categorize that person as underweight, normal weight, overweight, or obese based on that value.
+
+Commonly accepted BMI ranges are underweight: under 18.5, normal weight: 18.5 to 25, overweight: 25 to 30, obese: over 30.
+
+--- 
+
+## How does it work?
+
+BMI is determined by:
+```
+BMI = mass(kg) / ( height(metres) x height(metres) )
+```
+<br>
+For example, a person with weight of 60kg and height of 1.7metres will have a BMI of <u>20.76125</u>
+
+```r
+# weight of 60kg divide by height square of 1.7 metres
+60 / (1.7 * 1.7)
+```
+
+```
+## [1] 20.76125
+```
+
+--- 
+
+## Summary
+
+The BMI is then used to assess how much an individual's body weight departs from what is normal or desirable for a person's height.
+
+Using the BMI value of <u>20.76125</u> from the earlier example, a person with weight of 60kg and height of 1.7metres will fall under a <u>Normal Range</u> category.
+
+<table>
+<tr>
+<th>Category</th><th>BMI range(kg/m<sup>2</sup>)</th>
+</tr>
+<tr>
+<td>Underweight</td><td>&lt; 18.5</td>
+</tr>
+<tr>
+<td>Normal Range</td><td>18.5-22.9</td>
+</tr>
+<tr>
+<td>Overweight-At Risk</td><td>23.0-24.9</td>
+</tr>
+<tr>
+<td>Overweight-Moderately Obese</td><td>25.0-29.9</td>
+</tr>
+<tr>
+<td>Overweight-Severely Obese</td><td>&ge; 30.0</td>
+</tr>
+</table>
+<br>
+The BMI calculator on shiny server can be accessible via this url - https://leontang.shinyapps.io/bmi-cal-app
+

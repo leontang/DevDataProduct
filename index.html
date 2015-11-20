@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Body Mass Index (BMI) Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Body Mass Index (BMI) Calculator">
+  <meta name="author" content="Leon">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Body Mass Index (BMI) Calculator</h1>
+    <h2>Developing Data Products, Data Scientist</h2>
+    <p>Leon<br/>Data Scientist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Objective</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is the course project for the Developing Data Products module, as part of the
+Data Science course offering from Johns Hopkins University in Coursera.</p>
+
+<p>The purpose of this project and presentation is to demonstrate the understanding on
+the usage of shiny and slidify to develop data products easily and quickly.</p>
+
+<p>For this project, I have chose to do a Body Mass Index (BMI) calculator to demonstrate
+my understanding on shiny and slidify.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>What is Body Mass Index (BMI)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres.</p>
+
+<p>The BMI is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual, and then categorize that person as underweight, normal weight, overweight, or obese based on that value.</p>
+
+<p>Commonly accepted BMI ranges are underweight: under 18.5, normal weight: 18.5 to 25, overweight: 25 to 30, obese: over 30.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How does it work?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>BMI is determined by:</p>
+
+<pre><code>BMI = mass(kg) / ( height(metres) x height(metres) )
+</code></pre>
+
+<p><br>
+For example, a person with weight of 60kg and height of 1.7metres will have a BMI of <u>20.76125</u></p>
+
+<pre><code class="r"># weight of 60kg divide by height square of 1.7 metres
+60 / (1.7 * 1.7)
+</code></pre>
+
+<pre><code>## [1] 20.76125
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The BMI is then used to assess how much an individual&#39;s body weight departs from what is normal or desirable for a person&#39;s height.</p>
+
+<p>Using the BMI value of <u>20.76125</u> from the earlier example, a person with weight of 60kg and height of 1.7metres will fall under a <u>Normal Range</u> category.</p>
+
+<table>
+<tr>
+<th>Category</th><th>BMI range(kg/m<sup>2</sup>)</th>
+</tr>
+<tr>
+<td>Underweight</td><td>&lt; 18.5</td>
+</tr>
+<tr>
+<td>Normal Range</td><td>18.5-22.9</td>
+</tr>
+<tr>
+<td>Overweight-At Risk</td><td>23.0-24.9</td>
+</tr>
+<tr>
+<td>Overweight-Moderately Obese</td><td>25.0-29.9</td>
+</tr>
+<tr>
+<td>Overweight-Severely Obese</td><td>&ge; 30.0</td>
+</tr>
+</table>
+
+<p><br>
+The BMI calculator on shiny server can be accessible via this url - <a href="https://leontang.shinyapps.io/bmi-cal-app">https://leontang.shinyapps.io/bmi-cal-app</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Objective'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='What is Body Mass Index (BMI)'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How does it work?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Summary'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
